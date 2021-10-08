@@ -8,7 +8,7 @@ softShadows();
 export const WobblyBoxes = () => {
     return (
         <div className="wobbly-boxes">
-            <h1>Wobbly Boxes</h1>
+            <h1>Orbital Wobbly Boxes</h1>
             <Canvas shadows colorManagement camera={{ position: [-5, 3, 10], fov: 60 }} >
                 <ambientLight intensity={0.3} />
                 <directionalLight

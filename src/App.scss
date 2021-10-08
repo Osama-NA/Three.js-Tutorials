@@ -6,26 +6,36 @@
 }
 body{
     background-color: #f1f4f8;
+    overflow-x: hidden;
 }
-.dice, .wobbly-boxes{
+.dice, .wobbly-boxes, .wavy-image{
     width: 100vw;
-}
-.dice{
-    background-color: rgb(255, 192, 203);
     h1{
-        text-align: center;
-        color: rgb(89, 145, 218);
         padding: 1rem;
-    }
-}
-.wobbly-boxes{
-    background-color: rgb(192, 253, 255);
-    h1{
         text-align: center;
-        color: rgba(255, 59, 102, 0.815);
-        padding: 1rem;
     }
     Canvas{
         min-height: 500px;
+    }
+}
+.dice{
+    background-color: rgb(255, 192, 203);
+}
+.wobbly-boxes{
+    background-color: rgb(192, 253, 255);
+}
+.wavy-image{
+    position: relative;
+    background-color: rgb(255, 253, 151);
+    .image-title{
+        color: white;
+        font-size: 64px;
+        font-family: sans-serif;
+        width: 100%;
+        position: absolute;
+        top: 45%;
+        z-index: 1;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 3px black;
     }
 }
